@@ -27,7 +27,7 @@
 struct pci_card{
 	int fd;
 	void *map_base, *virt_addr;
-	unsigned long read_result, writeval;
+	unsigned read_result, writeval;
 	char *filename;
 	off_t target;
 };
@@ -36,10 +36,10 @@ struct pci_card{
 void pci_card_init(struct pci_card *card);
 
 // Takes in the desired card's filename, and the desired address, and returns the memory contents.
-unsigned long pci_card_read(char* fname, char* raddr);
+unsigned pci_card_read(char* fname, char* raddr);
 
 // Takes in the desired card's filename and input value, and writes it to the desired address.
-void pci_card_write(char* fname, char* raddr, unsigned long wval);
+void pci_card_write(char* fname, char* raddr, unsigned wval);
 
 #endif
 
