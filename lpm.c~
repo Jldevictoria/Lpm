@@ -31,3 +31,13 @@ void pci_card_write(char* fname, char* raddr, unsigned wval){
 	*((unsigned *) fusion.virt_addr) = wval;
 	return;
 }
+
+int main( int argc, char *argv[] ){
+	char* fn = "/sys/bus/pci/devices/0000:02:00.0/resource5";
+	char* addresss = "0x8004";
+	char* bsval = "0xFEEDBEEF";
+	unsigned yolo = strtoul(bsval, 0, 0);
+	pci_card_write(fn, addresss, yolo);
+	unsigned testval = pci_card_read(fn, addresss);
+	printf("0x%X\n", testval);
+}
