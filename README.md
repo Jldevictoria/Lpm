@@ -7,9 +7,11 @@ lpm - Lightweight PCIe Memory Library
  * Based off "pcimem" by Bill Farrow
  * License: GNU General Public License V2
 
-This library is designed to allow the user to access memory registers on PCI (express) devices.
-This library is meant to be compiled as position independent code.
-A makefile has been included to facilitate this process.
+===
+
+ * This library is designed to allow the user to access memory registers on PCI (express) devices.
+ * This library is meant to be compiled as position independent code.
+ * A makefile has been included to facilitate this process.
 
 ===
 
