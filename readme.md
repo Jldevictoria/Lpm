@@ -1,4 +1,4 @@
-lpm - Lightweight PCIe Memory Library
+lpm - Lightweight PCIe-Memory Module Library
 ===
 
  * Lightweight Pci-Memory Module Library
@@ -10,7 +10,7 @@ lpm - Lightweight PCIe Memory Library
 ===
 
  * This library is designed to allow the user to access memory registers on PCI (express) devices.
- * This library is meant to be compiled as position independent code.
+ * This library is meant to be compileable as position independent code. (dll/o/so)
  * A makefile has been included to facilitate this process.
 
 ===
