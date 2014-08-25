@@ -1,4 +1,4 @@
-/* 
+/*
  * Lightweight Pcimem Library
  * Made by Joseph DeVictoria (2014)
  * Based off pcimem by Bill Farrow
@@ -33,14 +33,15 @@ struct pci_card{
 };
 
 // Initialization function called within read and write functions.
-void pci_card_init(struct pci_card *card);
+struct pci_card * pci_card_init(char* filename, unsigned long raddr);
 
 // Takes in the desired card's filename, and the desired address, and returns the memory contents.
-unsigned pci_card_read(char* fname, char* raddr);
+unsigned pci_card_read(struct pci_card *device);
 
 // Takes in the desired card's filename and input value, and writes it to the desired address.
-void pci_card_write(char* fname, char* raddr, unsigned wval);
+void pci_card_write(struct pci_card * device, unsigned wVal);
+
+// Function to free struct memory
+void free_pci_card(struct pci_card * device);
 
 #endif
-
-
