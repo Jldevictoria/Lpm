@@ -23,10 +23,11 @@ The return value is a struct pointer that behaves like a link to a specific regi
 
 ===
 
-The functions ( pci_card_read(), pci_card_write(), and free_pci_card()  ) require the user to supply pci_card struct pointer.
-The read function simply returns the value stored at that register.
-The write function will take in an unsigned value and write it to the register.
-The free function will free up the memory used in making the pci_card struct.
+The functions ( pci_card_read(), pci_card_write(), and free_pci_card()  ) require a pci_card struct pointer.
+
+ * The read function simply returns the value stored at that register.
+ * The write function will take in an unsigned value and write it to the register.
+ * The free function will free up the memory used in making the pci_card struct.
 
 ===
 
