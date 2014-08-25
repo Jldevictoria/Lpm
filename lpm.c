@@ -1,7 +1,7 @@
 /*
- * Modified Lightweight Pcimem Library
+ * Lightweight Pci-Memory Module Library
  * Made by Joseph DeVictoria (2014)
- * Based off pcimem by Bill Farrow
+ * Based off "pcimem" by Bill Farrow
  * License: GNU General Public License V2
  */
 
