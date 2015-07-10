@@ -4,7 +4,7 @@ lpm - Lightweight PCIe-Memory Module Library
  * Lightweight Pci-Memory Module Library
  * Made by Joseph DeVictoria (2014)
  * <jldevictoria@gmail.com>
- * Based off "pcimem" by Bill Farrow
+ * Based off "[pcimem](https://github.com/billfarrow/pcimem)" by Bill Farrow
  * License: GNU General Public License V2
 
 ===
